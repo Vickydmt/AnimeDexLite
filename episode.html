@@ -43,18 +43,7 @@
 </head>
 
 <body>
-    <header id="head-div">
-        <div id="title1">
-            <a href="./index.html"><img src="https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDex@main/static/img/header.png"
-                    alt="AnimeDex" /></a>
-        </div>
-        <div id="search-div">
-            <form action="./search.html" method="GET">
-                <input type="text" name="query" id="query" placeholder="Search Anime..." required />
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
-        </div>
-    </header>
+    
 
     <section id="vid-sec">
         <div id="vid-div">
@@ -66,20 +55,10 @@
 
         <div id="server_main">
             <div class="status">
-                <div class="scontent">
-                    You are watching <b>{{ title }}</b>If current server
-                    doesn't work please try other servers beside.
-                </div>
+                
             </div>
 
-            <div class="server">
-                <div class="stitle">
-                    <i class="fa fa-microphone"></i>
-
-                    Servers:
-                </div>
-                <div id="serversbtn" class="slist"></div>
-            </div>
+            
 
             <a id="showdl" onclick="showDownload()"><i class="fa fa-download"></i>Download</a>
             <div id="dldiv" class="dldiv">
@@ -100,14 +79,8 @@
         </div>
     </section>
     <hr />
-    <footer>
-        <div>
-            <a href="https://github.com/TechShreyash" target="_blank">MADE WITH <i class="fa fa-heart pulse"></i>BY TECH
-                SHREYASH</a>
-            <a href="https://TechZBots.t.me" target="_blank">(@TechZBots)</a>
-        </div>
-    </footer>
-    <hr />
+    
+    
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./js/episode.js"></script>
