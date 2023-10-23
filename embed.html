@@ -13,6 +13,26 @@
 
         <style type="text/css">
             
+ .plyr--full-ui input[type=range] {
+     color: var(--player-hover-color);
+ }
+ .plyr__control--overlaid {
+     background: #1E1E1E;
+ }
+ 
+ .plyr--video .plyr__control.plyr__tab-focus,
+ .plyr--video .plyr__control:hover,
+ .plyr--video .plyr__control[aria-expanded=true] {
+     background: var(--player-hover-color);
+ }
+ 
+ .plyr__control.plyr__tab-focus {
+     box-shadow: 0 0 0 5px ;
+ }
+ 
+ .plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]::before {
+     background: violet;
+ }
 
             video {
                 width: 400%;
@@ -20,7 +40,7 @@
             }
         </style>
 
-        <link rel="stylesheet" type='text/css' href="https://adarsh-goel.github.io/resources/style.css">
+        
         <script src="https://cdn.jsdelivr.net/npm/plyr@3/dist/plyr.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/hls.js"></script>
         <script src="https://unpkg.com/plyr@3"></script>
