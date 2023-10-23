@@ -43,12 +43,20 @@
 </head>
 
 <body>
-    
+    <header id="head-div">
+        <div id="title1">
+            <a href="./index.html"><img src="https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDex@main/static/img/header.png"
+                    alt="AnimeDex" /></a>
+        </div>
+        <div id="search-div">
+            <form action="./search.html" method="GET">
+                <input type="text" name="query" id="query" placeholder="Search Anime..." required />
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </header>
 
-    
-            
-
-                <section id="vid-sec">
+    <section id="vid-sec">
         <div id="vid-div">
             <div id="video">
                 <iframe id="AnimeDexFrame" src="" style="border: 0px #ffffff none" scrolling="no" frameborder="0"
@@ -84,12 +92,19 @@
             </div>
         </div>
     </section>
+    <section id="watch">
+        <div class="selector link-data">PROSLO</div>
+        <div class="divo">
+            <h2>List Of Episodes:</h2>
+            <div id="ephtmldiv" class="divo2">EPISOS</div>
+        </div>
+    </section>
+    <hr />
     
-    
-    
+    <hr />
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./js/episode.js"></script>
 </body>
 
-</html>
+    </html>
