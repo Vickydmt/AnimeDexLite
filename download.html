@@ -53,7 +53,67 @@ cursor: pointer;
 width: auto;
 height: auto;
 border-radius: 5px;
-}</style>
+}
+.mycenter{
+display: flex;
+align-items: center;
+justify-content: center;
+}button.neon-button {
+border: 3px solid #a9e5ff;
+background: #fff;
+padding: 10px 10px;
+border-radius: 8px;
+font-family: "Roboto", sans-serif;
+font-size: 15px;
+text-transform: uppercase;
+color: #a9e5ff;
+letter-spacing: 4px;
+font-weight: bold;
+margin: 20px;
+cursor: pointer;
+}
+button.neon-button:hover {
+animation: flicker 300ms linear forwards;
+}
+@keyframes flicker {
+5% {
+border-color: #03d1fa;
+color: #03d1fa;
+text-shadow: 0 0 4px #42e9ff;
+box-shadow: 0 0 16px 0 #42e9ff, inset 0 0 8px 0 #42e9ff;
+}
+10% {
+border-color: #42e9ff;
+color: #42e9ff;
+box-shadow: unset;
+text-shadow: unset;
+}
+55% {
+border-color: #03d1fa;
+color: #03d1fa;
+text-shadow: 0 0 4px #42e9ff;
+box-shadow: 0 0 16px 0 #42e9ff, inset 0 0 8px 0 #42e9ff;
+}
+75% {
+border-color: #03d1fa;
+color: #03d1fa;
+text-shadow: 0 0 4px #42e9ff;
+box-shadow: 0 0 16px 0 #42e9ff, inset 0 0 8px 0 #42e9ff;
+}
+80% {
+border-color: #42e9ff;
+color: #42e9ff;
+box-shadow: unset;
+text-shadow: unset;
+}
+100% {
+border-color: #03d1fa;
+color: #03d1fa;
+text-shadow: 0 0 4px #42e9ff;
+box-shadow: 0 0 16px 0 #42e9ff, inset 0 0 8px 0 #42e9ff;
+}
+div#ContactForm1{display: none !important;}
+</style>
 
 
 </head>
@@ -67,12 +127,12 @@ border-radius: 5px;
            <div class="mycenter"> 
         </div>
 
-            <a id="showdl" onclick="showDownload()"><i class="mybutton"></i>Download</a>
+            <a id="showdl" onclick="showDownload()"><button class="mybutton">Download</button></a>
             <div id="dldiv" class="dldiv">
                 <h4 id="download">Download Links:</h4>
 
                 <div class="server">
-                    <div class="stitle"> <i class="mybutton"></i>Quality: </div>
+                    <div class="stitle"> <button class="mybutton"></button>Quality: </div>
                     <div id="dllinks" class="slist"></div>
                 </div>
             </div>
