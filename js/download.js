@@ -102,7 +102,7 @@ async function getEpList(anime_id) {
     let ephtml = "";
 
     for (let i = 0; i < total; i++) {
-        ephtml += `<a class="ep-btn" href="./episode.html?anime=${anime_id}&episode=${i + 1
+        ephtml += `<a class="ep-btn" href="./download.html?anime=${anime_id}&episode=${i + 1
             }">${i + 1}</a>`;
     }
     document.getElementById("ephtmldiv").innerHTML = ephtml;
@@ -181,7 +181,7 @@ getEpisode(urlParams.get("anime"), urlParams.get("episode")).then((success) => {
 getEpList(urlParams.get("anime")).then((totalep) => {
     console.log("Episodes loaded");
     getSelectorBtn(
-        `./episode.html?anime=${urlParams.get("anime")}&episode=`,
+        `./download.html?anime=${urlParams.get("anime")}&episode=`,
         urlParams.get("episode"),
         totalep
     ).then((data) => {
